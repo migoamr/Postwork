@@ -32,7 +32,7 @@ This project creates synthetic financial transaction data that mimics real banki
 
 ### Prerequisites
 - Python 3.7+
-- Jupyter Notebook/JupyterLab
+- Jupyter Notebook/JupyterLab/ Google Colab
 
 ### Required Packages
 ```bash
