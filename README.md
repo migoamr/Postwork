@@ -1,35 +1,39 @@
-# Postwork
-# Air Quality Data Visualization Project
+# Synthetic Financial Transaction Data Generator
 
-## Project Overview
-This project analyzes air quality data over a one-year period to identify trends and patterns for environmental research purposes. The visualizations help communicate findings about air quality variations across different timeframes.
+A comprehensive Jupyter Notebook for generating realistic synthetic financial transaction data for behavioral analysis and testing purposes.
 
-## Dataset
-- **Source**: Simulated EPA-style air quality data
-- **Period**: February 2023 - January 2024
-- **Parameters**: AQI, PM2.5, PM10, NO₂, O₃ levels
-- **Frequency**: Daily measurements
+## 📋 Overview
 
-## Visualizations
-1. **AQI Trends Over Time**: Line graph showing daily AQI with 7-day moving average
-2. **Monthly Comparison**: Bar charts and box plots comparing air quality across months and seasons
-3. **Pollutant Analysis**: Trends of different pollutants throughout the year
-4. **Heatmap**: AQI distribution by month and day of week
+This project creates synthetic financial transaction data that mimics real banking patterns while maintaining complete data privacy. The generated data includes realistic transaction amounts, types, and temporal patterns suitable for modeling, testing, and analysis.
 
-## Key Findings
-- Seasonal patterns show variations in air quality
-- Identification of best/worst months for air quality
-- Analysis of pollutant contributors
-- Weekly patterns and their impact on air quality
+## 🚀 Features
 
-## Requirements
+- **Realistic Data Patterns**: Time-based weighting for business hours and weekdays
+- **Multiple Transaction Types**: Deposit, Withdrawal, Payment, Transfer, Refund
+- **Smart Amount Distributions**: Different statistical distributions per transaction type
+- **Comprehensive Validation**: Statistical analysis and data quality checks
+- **Visual Analytics**: Built-in charts and graphs for pattern analysis
+- **Privacy Compliant**: No real customer information used
+
+## 📊 Generated Data Fields
+
+| Field | Description | Example |
+|-------|-------------|---------|
+| `transaction_id` | Unique transaction identifier | TXN000001 |
+| `transaction_amount` | Transaction amount in USD | 150.75 |
+| `transaction_type` | Type of transaction | PAYMENT, DEPOSIT, etc. |
+| `timestamp` | Date and time of transaction | 2023-06-15 14:30:25 |
+| `year`, `month`, `day` | Temporal breakdown components | 2023, 6, 15 |
+| `hour` | Hour of day | 14 |
+| `day_of_week` | Day of week (0=Monday) | 2 |
+| `is_weekend` | Weekend indicator | 0 or 1 |
+
+## 🛠️ Installation & Setup
+
+### Prerequisites
 - Python 3.7+
-- pandas
-- matplotlib
-- seaborn
-- numpy
+- Jupyter Notebook/JupyterLab
 
-## Usage
-Run the Jupyter Notebook `air_quality_analysis.ipynb` to reproduce the analysis and visualizations.
-
-## Repository Structure
+### Required Packages
+```bash
+pip install pandas numpy faker matplotlib seaborn
